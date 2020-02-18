@@ -23,7 +23,7 @@ docker-compose -f single-validator-docker-compose.yaml up
 cd demo_contract
 pipenv install
 pipenv shell
-python scripts/deploy_contract
+python scripts/tx_contract.py
 
 # Shut down single validator ethermint by running
 docker-compose -f single-validator-docker-compose.yaml down
@@ -39,7 +39,7 @@ docker-compose -f multiple_validators-docker-compose.yaml up
 cd demo_contract
 pipenv install
 pipenv shell
-python scripts/deploy_contract
+python scripts/tx_contract.py
 
 # Shut down single validator ethermint by running
 docker-compose -f multiple_validators-docker-compose.yaml down
