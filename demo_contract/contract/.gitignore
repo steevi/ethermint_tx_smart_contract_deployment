@@ -1,0 +1,26 @@
+# python
+dist/
+*.egg-info
+
+# Jupyter
+.ipynb_checkpoints
+
+# Environments
+venv/
+
+# mac
+.DS_Store
+
+# Pycharm
+.idea
+
+# javascript
+node_modules
+package-lock.json
+
+# truffle
+build/
+
+# wallet secret key
+.secret
+.owner_pk

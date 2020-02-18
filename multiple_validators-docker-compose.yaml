@@ -1,0 +1,27 @@
+version: '3.3'
+
+services:
+  emintnode0:
+    image: emint_node
+    entrypoint: /usr/bin/run-node.sh
+    environment:
+      - ID=0
+
+  emintnode1:
+    image: emint_node
+    entrypoint: /usr/bin/run-node.sh
+    environment:
+      - ID=1
+
+  emintserver:
+    image: emint_node
+    entrypoint: /usr/bin/run-server.sh
+    environment:
+      - ID=1
+    depends_on:
+      - emintnode0
+    environment:
+      - NODE=tcp://emintnode0:26657
+      - KEYNAME=validator0
+    ports:
+      - "8545:8545"

@@ -1,0 +1,14 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+vyper = "==0.1.0b12"
+eth-utils = {editable = true,git = "https://github.com/dHonerkamp/eth-utils", ref="cc0decc4cbe8d8dd9beb681cc0b6fedc0d1d26ad"}
+web3 = {editable = true,git = "https://github.com/dHonerkamp/web3.py", ref="f7ac627fd152278994e00e2054647f45480ecba4"}
+
+[requires]
+python_version = "3.7"

@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "openzeppelin-test-helpers": "^0.4.0",
+    "chai": "^4.2.0",
+    "eth-gas-reporter": "^0.2.7"
+  }
+}

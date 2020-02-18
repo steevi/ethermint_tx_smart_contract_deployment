@@ -1,0 +1,3 @@
+[submodule "ethermint_container/ethermint"]
+	path = ethermint_container/ethermint
+	url = https://github.com/ChainSafe/ethermint.git

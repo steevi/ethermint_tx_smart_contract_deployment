@@ -1,0 +1,16 @@
+version: '3.3'
+
+services:
+  emintnode0:
+    image: emint_node
+    entrypoint: /usr/bin/run_local_node.sh
+    
+  emintserver:
+    image: emint_node
+    entrypoint: /usr/bin/run_local_server.sh
+    depends_on:
+      - emintnode0
+    environment:
+      - NODE=tcp://emintnode0:26657
+    ports:
+      - "8545:8545"
